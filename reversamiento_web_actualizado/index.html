@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reversamiento en Acción</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Reversamiento en Acción</h1>
+        <h2>Explorando soluciones a través del pensamiento inverso</h2>
+
+        
+<section id="analogía">
+    <h3>🚗 Analogía: Manejar un vehículo</h3>
+    <p><strong>Situación:</strong> Estás conduciendo hacia adelante.</p>
+    <div class="car-container">
+        <img id="car" src="car.png" alt="Carro" />
+    </div>
+    <button onclick="moverAdelante()">Conducir hacia adelante</button>
+    <button onclick="moverAtras()">Reversar</button>
+    <p id="explicacion"></p>
+</section>
+
+<section id="problema">
+            <h3>Problema original:</h3>
+            <p id="problema-original">¿Cómo evitar que los estudiantes se distraigan en clase?</p>
+            <button onclick="invertirProblema()">Invertir el problema</button>
+        </section>
+
+        <section id="reversado" class="hidden">
+            <h3>Problema invertido:</h3>
+            <p id="problema-invertido"></p>
+            <ul id="ideas-reversadas"></ul>
+            <button onclick="revertirIdeas()">Revertir ideas</button>
+        </section>
+
+        <section id="soluciones" class="hidden">
+            <h3>Soluciones prácticas:</h3>
+            <ul id="ideas-revertidas"></ul>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
