@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Perdóname ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      max-width: 600px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #e63946;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 15px 0;
+      color: #333;
+    }
+
+    button {
+      margin-top: 20px;
+      background: #e63946;
+      border: none;
+      padding: 15px 25px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #d62828;
+      transform: scale(1.05);
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Perdóname ❤️</h1>
+    <p>No dejo de pensar en ti…</p>
+    <p>Sé que cometí errores y lamento de corazón haberte lastimado.</p>
+    <p>Quiero volver a intentarlo contigo, porque eres lo mejor que me ha pasado.</p>
+    <button onclick="mostrarMensaje()">¿Me das otra oportunidad?</button>
+    <p id="respuesta" style="margin-top:20px; font-weight: bold; color: #e63946;"></p>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("respuesta").innerText = "Prometo hacerlo mejor esta vez ❤️";
+    }
+  </script>
+</body>
+</html>
